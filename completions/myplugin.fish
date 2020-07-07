@@ -1,7 +1,1 @@
-bind \cg "vi ~/.config/fish/config.fish"
-
-set -l name (basename (status -f) .fish){_uninstall}
-
-function $name --on-event $name
-    bind --erase \cg
-end
+complete -c myplugin -d "does something cool"
