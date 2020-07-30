@@ -13,6 +13,6 @@
 #   set -U fd2_current_tmux_session "$fish_projects_current_sn"
 # end
 
-fd2_define_command blah "top level command dispatcher - see fish_subcmd"
+fd2_define_command -p blah -d "top level command dispatcher - see fish_subcmd"
 
-fd2_define_subcommand brblah set __fd2_blah_rhubarb "sub command for command blah"
+fd2_define_subcommand -p brblah -c set -f __fd2_blah_rhubarb -d "sub command for command blah"
